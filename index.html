@@ -1,16 +1,69 @@
 
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <title>test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div align="center">
-        <h3>test</h3>
-    </div>
-</body>
+  <header>
+    <h1>Portfolio.</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <main>
+    <section class="hero">
+      <p>PORTFOLIO / 2026</p>
+      <h2>Hello, I'm Your Name.</h2>
+      <h3>Student / Developer</h3>
+      <p>プログラミングで、便利なサービスを作る。</p>
+      <a class="button" href="#works">作品を見る ↓</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        大学で情報系の分野を学んでいます。
+        ソフトウェア開発や自然言語処理に興味があり、
+        授業や個人開発を通して技術を身につけています。
+      </p>
+      <h3>Skills</h3>
+      <p>Python / HTML / CSS / JavaScript / SQL</p>
+    </section>
+
+    <section id="works">
+      <h2>Works</h2>
+
+      <article class="work-card">
+        <h3>Task Management App</h3>
+        <p>タスクを管理するWebアプリケーション。</p>
+        <p class="tech">使用技術：HTML, CSS, JavaScript, SQL</p>
+        <a href="#">詳細を見る</a>
+      </article>
+
+      <article class="work-card">
+        <h3>Text Similarity Tool</h3>
+        <p>文章同士の意味的な類似度を調べるツール。</p>
+        <p class="tech">使用技術：Python, Sentence Transformers</p>
+        <a href="#">詳細を見る</a>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>お問い合わせや連絡はこちらから。</p>
+      <a href="https://github.com/your-id">GitHub</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Your Name</p>
+  </footer>
+</body>
 </html>

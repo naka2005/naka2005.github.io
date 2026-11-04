@@ -1,0 +1,140 @@
+
+/* 基本設定 */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", sans-serif;
+  line-height: 1.8;
+  color: #1e293b;
+  background: #f8fafc;
+}
+
+a {
+  color: #0284c7;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 8%;
+  background: #101827;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+}
+
+/* 各セクション */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 64px 0;
+  scroll-margin-top: 20px;
+}
+
+section h2 {
+  font-size: 28px;
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 8px;
+}
+
+/* メインビジュアル */
+.hero {
+  padding: 100px 0;
+}
+
+.hero h2 {
+  border: none;
+  font-size: clamp(32px, 6vw, 52px);
+  margin-bottom: 0;
+}
+
+.hero h3 {
+  color: #0284c7;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  background: #0284c7;
+  color: white;
+}
+
+/* 作品カード */
+.work-card {
+  margin: 24px 0;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: white;
+  transition: transform 0.2s;
+}
+
+.work-card:hover {
+  transform: translateY(-3px);
+}
+
+.tech {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* フッター */
+footer {
+  padding: 24px;
+  text-align: center;
+  background: #101827;
+  color: white;
+}
+
+/* スマートフォン対応 */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  nav {
+    gap: 16px;
+  }
+
+  .hero {
+    padding: 64px 0;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+}
